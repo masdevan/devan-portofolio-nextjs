@@ -28,13 +28,12 @@ Hi there! Aku **Devan Yudistira Sugiharta**, full-stack developer & UI/UX design
 
 ---
 
-### Biar makin trendi, tambahin:
-1. **Badges keren**  
-   Contoh:
+### For You:
+1. **Github Badges**  
    ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=devansugiharta)
    ![GitHub followers](https://img.shields.io/github/followers/masdevan?style=social)
-2. **Links langsung ke live demo & source code** tiap proyek — udah aku taruh di tabel *Featured Projects* di atas biar recruiter tinggal klik.
-3. **Call to action lucu**  
-   > Kalau kamu baca ini, kamu keren. Yuk kerja bareng! 🚀
+2. **Include Direct Links to Live Demos & Source Code** This is already implemented in the *Featured Projects* table above, so potential clients or recruiters can instantly access your work.
+3. **Work with me**  
+   > if you read it, you're awesome. Let's work together! 🚀
 
 ---

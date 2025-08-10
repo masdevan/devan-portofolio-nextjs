@@ -5,26 +5,46 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Devan Yudistira Sugiharta | Personal Website Portofolio',
-  description: 'My Description',
+  description: 'Devan Yudistira Sugiharta Portofolio - Introduction Personal Website.',
+  keywords: ['Portofolio', 'Personal Portofolio', 'Devan Yudistira Sugiharta', 'Web Developer', 'Software Engineer'],
+  openGraph: {
+    title: 'Devan Yudistira Sugiharta | Personal Website Portofolio',
+    description: 'Devan Yudistira Sugiharta Portofolio - Introduction Personal Website.',
+    url: 'https://devansugiharta.my.id',
+    siteName: 'Devan Yudistira Sugiharta',
+    images: [
+      {
+        url: 'https://devansugiharta.my.id/professional-developer-portrait.png',
+        width: 630,
+        height: 630,
+        alt: 'Devan Yudistira Sugiharta - Professional Developer Profile',
+      },
+    ],
+    locale: 'id_ID',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://devansugiharta.my.id',
+  },
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="en">
-      <head>
-        <style>{`
-          html {
-            font-family: ${GeistSans.style.fontFamily};
-            --font-sans: ${GeistSans.variable};
-            --font-mono: ${GeistMono.variable};
-          }
-        `}</style>
-      </head>
-      <body suppressHydrationWarning={true}>{children}</body>
+    <html
+      lang="id"
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
+    >
+      <body suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   )
 }

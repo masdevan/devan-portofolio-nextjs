@@ -22,10 +22,10 @@ Hi there! I’m **Devan Yudistira Sugiharta**, a full-stack developer & UI/UX de
 | **Weather Dashboard** | Real-time weather dashboard with an interactive map | Vue.js, Python (FastAPI), OpenWeather API | [Live](https://devansugiharta.my.id/weather) | [Repo](https://github.com/masdevan/weather) |
 
 ## Let’s Connect!
-- Email: [hello@devansugiharta.my.id](mailto:hello@devansugiharta.my.id)  
+- Email: [hello@devansugiharta.my.id](mailto:masdevansugiharta@gmail.com)  
 - WhatsApp: +62 857-2813-3473  
 - Location: Central Java, Indonesia  
-- Also find me on: [GitHub](https://github.com/masdevan) · [Instagram](https://instagram.com/masdevan) · [Website](https://devansugiharta.my.id)
+- Also find me on: [GitHub](https://github.com/masdevan) · [Instagram](https://instagram.com/devan.ys) · [Website](https://devansugiharta.my.id)
 
 ---
 

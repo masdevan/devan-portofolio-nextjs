@@ -81,6 +81,12 @@ export function Footer() {
                       Website
                     </Link>
                   </Button>
+                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
+                    <Link href="https://www.linkedin.com/in/masdevansugiharta" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
+                      LinkedIn
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>

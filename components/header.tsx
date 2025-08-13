@@ -22,7 +22,7 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-8 py-3 md:py-4 max-w-[1300px]">
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-xl sm:text-2xl font-bold text-white">
-            Devan Yudistira
+            Devan Sugiharta
           </Link>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
             <Link href="#hero" className="text-gray-300 hover:text-gray-100 transition-colors">Home</Link>

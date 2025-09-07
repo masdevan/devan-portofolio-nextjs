@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description: 'Devan Yudistira Sugiharta Portofolio - Introduction Personal Website.',
   keywords: ['Portofolio', 'Personal Portofolio', 'Devan Yudistira Sugiharta', 'Web Developer', 'Software Engineer'],
   icons: {
-    icon: '/icon/icon.png',
-    shortcut: '/icon/icon.png',
-    apple: '/icon/icon.png',
+    icon: '/icon/icon.webp',
+    shortcut: '/icon/icon.webp',
+    apple: '/icon/icon.webp',
   },
   openGraph: {
     title: 'Devan Yudistira Sugiharta | Personal Website Portofolio',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'Devan Yudistira Sugiharta',
     images: [
       {
-        url: 'https://devansugiharta.my.id/professional-developer-portrait.png',
+        url: 'https://devansugiharta.my.id/professional-developer-portrait.webp',
         width: 630,
         height: 630,
         alt: 'Devan Yudistira Sugiharta - Professional Developer Profile',

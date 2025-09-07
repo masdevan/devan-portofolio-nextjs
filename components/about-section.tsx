@@ -12,7 +12,7 @@ export function AboutSection() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative flex justify-center md:justify-end">
               <Image
-                src="/developer-workspace.png"
+                src="/horizontal-image.webp"
                 alt="Developer workspace"
                 width={450}
                 height={450}

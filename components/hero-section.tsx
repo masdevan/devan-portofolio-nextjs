@@ -22,7 +22,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 z-0 opacity-10"
         style={{
-          backgroundImage: 'url(/dy-pattern.png)',
+          backgroundImage: 'url(/dy-pattern.webp)',
           backgroundRepeat: 'repeat',
           backgroundSize: '200px',
         }}
@@ -55,7 +55,7 @@ export function HeroSection() {
           </div>
           <div className="flex justify-center md:justify-end order-first md:order-last mb-6 md:mb-0">
             <Image
-              src="/professional-developer-portrait.png"
+              src="/professional-developer-portrait.webp"
               alt="Devan Yudistira Sugiharta"
               width={400}
               height={400}

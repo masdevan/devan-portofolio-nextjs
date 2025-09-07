@@ -17,7 +17,7 @@ export function Footer() {
         <div
           className="absolute inset-0 z-0 opacity-10"
           style={{
-            backgroundImage: 'url(/dy-pattern.png)',
+            backgroundImage: 'url(/dy-pattern.webp)',
             backgroundRepeat: 'repeat',
             backgroundSize: '200px',
           }}

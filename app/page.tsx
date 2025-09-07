@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { SkillsSection } from "@/components/skills-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { Footer } from "@/components/footer"
+import { JourneySection } from "@/components/journey-section"
 
 export default function Portfolio() {
   const skills = [
@@ -26,7 +27,7 @@ export default function Portfolio() {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
       tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-      image: "/modern-ecommerce-interface.png",
+      image: "/blank-web.webp",
       github: "#",
       demo: "#"
     },
@@ -34,7 +35,7 @@ export default function Portfolio() {
       title: "Task Management App",
       description: "Collaborative task management application with real-time updates and team collaboration features.",
       tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-      image: "/task-management-dashboard.png",
+      image: "/blank-web.webp",
       github: "#",
       demo: "#"
     },
@@ -42,7 +43,7 @@ export default function Portfolio() {
       title: "Portfolio Website",
       description: "Responsive portfolio website with modern design, animations, and content management system.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Sanity"],
-      image: "/modern-portfolio-website.png",
+      image: "/blank-web.webp",
       github: "#",
       demo: "#"
     },
@@ -50,7 +51,7 @@ export default function Portfolio() {
       title: "Weather Dashboard",
       description: "Real-time weather dashboard with location-based forecasts and interactive maps.",
       tech: ["Vue.js", "Python", "FastAPI", "OpenWeather API"],
-      image: "/weather-dashboard-interface.png",
+      image: "/blank-web.webp",
       github: "#",
       demo: "#"
     }
@@ -61,6 +62,7 @@ export default function Portfolio() {
       <Header />
       <HeroSection />
       <AboutSection />
+      <JourneySection />
       <SkillsSection skills={skills} />
       <ProjectsSection projects={projects} />
       <Footer />

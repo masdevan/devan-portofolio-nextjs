@@ -24,12 +24,11 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-      image: "/blank-web.webp",
-      github: "#",
-      demo: "#"
+      title: "Vantera - Build your website",
+      description: "Join thousands of developers who are already using Vantera to create, preview, and deploy web applications faster than ever before.",
+      tech: ["Next.js", "Tailwind CSS"],
+      image: "/vantera.png",
+      demo: "https://vantera-app-builder.vercel.app/"
     },
     {
       title: "Task Management App",

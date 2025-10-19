@@ -9,8 +9,8 @@ interface Project {
   description: string;
   tech: string[];
   image: string;
-  github: string;
-  demo: string;
+  github?: string;
+  demo?: string;
 }
 
 interface ProjectsSectionProps {
@@ -51,14 +51,31 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                   ))}
                 </div>
                 <div className="flex gap-3 sm:gap-4">
-                  <Button variant="outline" size="sm" className="h-8 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
-                    <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
-                    Code
-                  </Button>
-                  <Button size="sm" className="h-8 text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 text-black">
-                    <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
-                    Live Demo
-                  </Button>
+                  {project.github && project.github !== " " && (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="h-8 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                      asChild
+                    >
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  {project.demo && project.demo !== " " && (
+                    <Button 
+                      size="sm" 
+                      className="h-8 text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 text-black"
+                      asChild
+                    >
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

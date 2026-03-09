@@ -98,3 +98,37 @@
 .bg-sidebar {
   @apply bg-[#161616] border-r border-gray-800;
 }
+
+/* Shiny glitter animation for SUGIHARTA text */
+@keyframes shiny {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-shiny {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 20%,
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0.06) 80%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shiny 8s ease-in-out infinite;
+}
+
+/* Enhanced visibility on mobile */
+@media (max-width: 768px) {
+  .animate-shiny {
+    animation: shiny 5s ease-in-out infinite;
+  }
+}

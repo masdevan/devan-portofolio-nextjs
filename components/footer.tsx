@@ -92,6 +92,11 @@ export function Footer() {
             </div>
           </div>
         </div>
+        <div className="flex justify-center pointer-events-none mt-20">
+          <h1 className="text-[15vw] md:text-[15vw] lg:text-[12vw] font-black text-white/[0.04] whitespace-nowrap select-none animate-shiny">
+            SUGIHARTA
+          </h1>
+        </div>
       </section>
       <div className="border-t border-gray-800 py-6 md:py-8">
         <div className="container mx-auto px-4 sm:px-8 max-w-[1300px]">
@@ -102,10 +107,10 @@ export function Footer() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
-              <Link href="/privacy-policy" className="text-xs sm:text-sm text-gray-400 hover:text-gray-200 transition-colors">
+              <Link href="/privacy-policy" className="text-xs sm:text-sm m-auto text-gray-400 hover:text-gray-200 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-service" className="text-xs sm:text-sm text-gray-400 hover:text-gray-200 transition-colors">
+              <Link href="/terms-of-service" className="text-xs sm:text-sm m-auto text-gray-400 hover:text-gray-200 transition-colors">
                 Terms of Service
               </Link>
             </div>
@@ -115,3 +120,4 @@ export function Footer() {
     </footer>
   )
 }
+

@@ -31,11 +31,12 @@ export default function Portfolio() {
       demo: "https://vantera-app-builder.vercel.app/"
     },
     {
-      title: "Nucestatic - Automated Management System",
-      description: "Nucestatic is an automated asset management system.",
-      tech: ["Python", "FastAPI", "MySQL"],
-      image: "/nucestatic.png",
-      demo: "https://nucestatic.vercel.app/"
+      title: "Portfolio Website",
+      description: "Responsive portfolio website with modern design, animations, and content management system.",
+      tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Sanity"],
+      image: "/blank-web.webp",
+      github: "#",
+      demo: "#"
     },
     {
       title: "Portfolio Website",

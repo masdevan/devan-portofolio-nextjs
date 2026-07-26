@@ -1,16 +1,10 @@
 'use client'
 
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Globe, Phone, MapPin, Instagram, MessageCircle } from 'lucide-react'
-import { useState, useEffect } from 'react'
 
 export function Footer() {
-  const [currentYear, setCurrentYear] = useState('')
 
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear().toString())
-  }, [])
   return (
     <footer className="bg-[#111111] border-t border-gray-800">
       <section id="contact" className="py-12 md:py-20 relative overflow-hidden">
@@ -51,42 +45,30 @@ export function Footer() {
               <div>
                 <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 md:mb-6">Connect With Me</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
-                    <Link href="https://github.com/masdevan" target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                      GitHub
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
-                    <Link href="https://www.instagram.com/devan.ys" target="_blank" rel="noopener noreferrer">
-                      <Instagram className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                      Instagram
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
-                    <Link href="mailto:masdevansugiharta@gmail.com">
-                      <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                      Email
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
-                    <Link href="https://wa.me/6285728133473" target="_blank" rel="noopener noreferrer">
-                      <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                      WhatsApp
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
-                    <Link href="https://devansugiharta.my.id" target="_blank" rel="noopener noreferrer">
-                      <Globe className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                      Website
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="h-9 text-xs sm:text-sm border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white justify-start" asChild>
-                    <Link href="https://www.linkedin.com/in/masdevansugiharta" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                      LinkedIn
-                    </Link>
-                  </Button>
+                  <a href="https://github.com/masdevan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
+                    <Github className="w-4 h-4 sm:w-5 sm:h-5" />
+                    GitHub
+                  </a>
+                  <a href="https://www.instagram.com/devan.ys" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
+                    <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
+                    Instagram
+                  </a>
+                  <a href="mailto:masdevansugiharta@gmail.com" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
+                    <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                    Email
+                  </a>
+                  <a href="https://wa.me/6285728133473" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
+                    <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                    WhatsApp
+                  </a>
+                  <a href="https://devansugiharta.my.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
+                    <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
+                    Website
+                  </a>
+                  <a href="https://www.linkedin.com/in/masdevansugiharta" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white">
+                    <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
+                    LinkedIn
+                  </a>
                 </div>
               </div>
             </div>
@@ -103,7 +85,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <p className="text-xs sm:text-sm text-gray-400">
-                © {new Date().getFullYear()} Devan Yudistira Sugiharta. All rights reserved.
+                &copy; {new Date().getFullYear()} Devan Yudistira Sugiharta. All rights reserved.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
@@ -120,4 +102,3 @@ export function Footer() {
     </footer>
   )
 }
-

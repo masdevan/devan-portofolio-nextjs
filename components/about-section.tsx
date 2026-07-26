@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Badge } from "@/components/ui/badge"
 
 export function AboutSection() {
   return (
@@ -30,15 +29,15 @@ export function AboutSection() {
                 scalable applications, design intuitive interfaces, and solve complex problems with clean, efficient code.
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-4">
-                <Badge variant="secondary" className="text-xs sm:text-sm bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400 transition-colors">
+                <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs sm:text-sm font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400">
                   5+ Years Experience
-                </Badge>
-                <Badge variant="secondary" className="text-xs sm:text-sm bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400 transition-colors">
+                </span>
+                <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs sm:text-sm font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400">
                   50+ Projects Completed
-                </Badge>
-                <Badge variant="secondary" className="text-xs sm:text-sm bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400 transition-colors">
+                </span>
+                <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs sm:text-sm font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400">
                   Full Stack Developer
-                </Badge>
+                </span>
               </div>
             </div>
           </div>

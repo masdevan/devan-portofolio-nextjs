@@ -1,22 +1,11 @@
 'use client'
 
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Code, Mail } from 'lucide-react'
 import Link from "next/link"
-import { useEffect } from 'react'
 
 export function HeroSection() {
-  useEffect(() => {
-    const scrollToElement = (id: string) => {
-      const element = document.getElementById(id)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
 
-    ;(window as any).scrollToElement = scrollToElement
-  }, [])
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 md:pt-24 bg-[#111111]">
       <div
@@ -39,18 +28,22 @@ export function HeroSection() {
               Full Stack Developer & UI/UX Designer passionate about creating innovative digital experiences
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
-              <Button size="default" className="bg-gray-200 hover:bg-gray-300 text-black text-sm sm:text-base">
-                <Link href="#projects" onClick={() => (window as any).scrollToElement?.('projects')} className="flex items-center">
-                  <Code className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  View My Work
-                </Link>
-              </Button>
-              <Button size="default" variant="outline" className="border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white text-sm sm:text-base">
-                <Link href="#contact" onClick={() => (window as any).scrollToElement?.('contact')} className="flex items-center">
-                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Get In Touch
-                </Link>
-              </Button>
+              <Link
+                href="#projects"
+                onClick={() => (window as any).scrollToElement?.('projects')}
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium transition-colors h-10 px-4 py-2 bg-gray-200 hover:bg-gray-300 text-black"
+              >
+                <Code className="w-4 h-4 sm:w-5 sm:h-5" />
+                View My Work
+              </Link>
+              <Link
+                href="#contact"
+                onClick={() => (window as any).scrollToElement?.('contact')}
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium transition-colors h-10 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+              >
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                Get In Touch
+              </Link>
             </div>
           </div>
           <div className="flex justify-center md:justify-end order-first md:order-last mb-6 md:mb-0">

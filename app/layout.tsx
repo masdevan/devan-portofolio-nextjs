@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description: 'Devan Yudistira Sugiharta Portofolio - Introduction Personal Website.',
   keywords: ['Portofolio', 'Personal Portofolio', 'Devan Yudistira Sugiharta', 'Web Developer', 'Software Engineer'],
   icons: {
-    icon: '/icon/icon.webp',
-    shortcut: '/icon/icon.webp',
-    apple: '/icon/icon.webp',
+    icon: '/favicon/favicon.ico',
+    shortcut: '/favicon/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
   },
   openGraph: {
     title: 'Devan Yudistira Sugiharta | Personal Website Portofolio',

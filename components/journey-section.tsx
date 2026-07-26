@@ -1,12 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-
-interface JourneyItem {
-    period: string
-    company: string | string[]
-    role: string
-    description: string
-}
+import type { JourneyItem } from "@/types"
 
 const journeyData: JourneyItem[] = [
     {
@@ -49,28 +41,28 @@ export function JourneySection() {
                         {journeyData.map((item, index) => (
                             <div key={index} className="relative pl-10 sm:pl-14">
                                 <div className="absolute left-4 sm:left-5 -translate-x-1/2 top-2 w-3 h-3 rounded-full bg-gray-300 border border-gray-600" />
-                                <Card className="bg-[#161616] border border-gray-800">
-                                    <CardContent className="p-5 md:p-6">
+                                <div className="bg-[#161616] border border-gray-800 rounded-lg">
+                                    <div className="p-5 md:p-6">
                                         <div className="flex flex-wrap items-center gap-2 mb-2">
-                                            <Badge variant="secondary" className="text-xs bg-[#1a1a1a] text-gray-200 border border-gray-600 cursor-default select-none pointer-events-none hover:bg-[#1a1a1a] transition-none">
+                                            <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-[#1a1a1a] text-gray-200 border border-gray-600">
                                                 {item.period}
-                                            </Badge>
+                                            </span>
                                             {Array.isArray(item.company) ? (
                                                 item.company.map((companyName, idx) => (
-                                                    <Badge key={idx} variant="outline" className="text-xs border-gray-600 text-gray-300">
+                                                    <span key={idx} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold border-gray-600 text-gray-300">
                                                         {companyName}
-                                                    </Badge>
+                                                    </span>
                                                 ))
                                             ) : (
-                                                <Badge variant="outline" className="text-xs border-gray-600 text-gray-300">
+                                                <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold border-gray-600 text-gray-300">
                                                     {item.company}
-                                                </Badge>
+                                                </span>
                                             )}
                                         </div>
                                         <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{item.role}</h3>
                                         <p className="text-sm sm:text-base text-gray-300 leading-relaxed">{item.description}</p>
-                                    </CardContent>
-                                </Card>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -79,5 +71,3 @@ export function JourneySection() {
         </section>
     )
 }
-
-

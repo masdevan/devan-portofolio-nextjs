@@ -23,7 +23,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <div key={index} className="bg-[#161616] border border-gray-800 hover:border-gray-500 transition-all duration-300 hover:shadow-xl hover:shadow-black/30 overflow-hidden rounded-lg">
+            <div key={index} className="bg-[#161616] border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-xl hover:shadow-black/30 overflow-hidden rounded-lg">
               <div className="relative">
                 <Image
                   src={project.image || "/placeholder.svg"}
@@ -43,7 +43,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 <div className="p-0 pt-4">
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                     {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-gray-600 hover:bg-gray-800 hover:border-gray-400">
+                      <span key={techIndex} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-white/20 hover:bg-gray-800 hover:border-white/40">
                         {tech}
                       </span>
                     ))}
@@ -54,7 +54,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-8 px-3 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-8 px-3 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
                       >
                         <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                         Code

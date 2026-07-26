@@ -66,7 +66,7 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
               className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors py-1 px-3 h-auto ${
                 activeCategory === category
                   ? "bg-gray-200 hover:bg-gray-300 text-black"
-                  : "border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                  : "border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
               }`}
             >
               {category}
@@ -77,13 +77,13 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
           {filteredSkills.map((skill, index) => {
             const IconComponent = getIconComponent(skill.icon)
             return (
-              <div key={index} className="bg-[#161616] border border-gray-800 hover:border-gray-500 transition-all duration-300 hover:shadow-lg hover:shadow-black/30 rounded-lg">
+              <div key={index} className="bg-[#161616] border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/30 rounded-lg">
                 <div className="p-6 text-center flex flex-col items-center">
-                  <div className="p-2 sm:p-3 md:p-4 bg-[#1a1a1a] border border-gray-700 mb-2 sm:mb-4">
+                  <div className="p-2 sm:p-3 md:p-4 bg-[#1a1a1a] border border-white/15 mb-2 sm:mb-4">
                     <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-gray-300" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{skill.name}</h3>
-                  <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-gray-600 text-gray-300">
+                  <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-white/20 text-gray-300">
                     {skill.category}
                   </span>
                 </div>

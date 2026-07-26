@@ -39,7 +39,7 @@ export function HeroSection() {
               <Link
                 href="#contact"
                 onClick={() => (window as any).scrollToElement?.('contact')}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium transition-colors h-10 px-4 py-2 border border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium transition-colors h-10 px-4 py-2 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 Get In Touch
@@ -52,7 +52,7 @@ export function HeroSection() {
               alt="Devan Yudistira Sugiharta"
               width={400}
               height={400}
-              className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] rounded-full border-4 border-gray-300 shadow-2xl shadow-black/40"
+              className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] rounded-full border-4 border-white/30 shadow-2xl shadow-black/40"
             />
           </div>
         </div>

@@ -65,8 +65,8 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
               onClick={() => setActiveCategory(category)}
               className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors py-1 px-3 h-auto ${
                 activeCategory === category
-                  ? "bg-gray-200 hover:bg-gray-300 text-black"
-                  : "border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                  ? "bg-gray-200 hover:bg-white/90 text-black"
+                  : "border border-white/20 text-gray-200 bg-transparent hover:bg-white/10 hover:text-white"
               }`}
             >
               {category}

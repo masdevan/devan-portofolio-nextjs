@@ -45,27 +45,27 @@ export function Footer() {
               <div>
                 <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 md:mb-6">Connect With Me</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  <a href="https://github.com/masdevan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-gray-800 hover:text-white">
+                  <a href="https://github.com/masdevan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                     GitHub
                   </a>
-                  <a href="https://www.instagram.com/devan.ys" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-gray-800 hover:text-white">
+                  <a href="https://www.instagram.com/devan.ys" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
                     Instagram
                   </a>
-                  <a href="mailto:masdevansugiharta@gmail.com" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-gray-800 hover:text-white">
+                  <a href="mailto:masdevansugiharta@gmail.com" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                     Email
                   </a>
-                  <a href="https://wa.me/6285728133473" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-gray-800 hover:text-white">
+                  <a href="https://wa.me/6285728133473" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                     WhatsApp
                   </a>
-                  <a href="https://devansugiharta.my.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-gray-800 hover:text-white">
+                  <a href="https://devansugiharta.my.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
                     Website
                   </a>
-                  <a href="https://www.linkedin.com/in/masdevansugiharta" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-gray-800 hover:text-white">
+                  <a href="https://www.linkedin.com/in/masdevansugiharta" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     LinkedIn
                   </a>

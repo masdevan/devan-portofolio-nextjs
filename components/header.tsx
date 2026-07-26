@@ -41,15 +41,15 @@ export function Header() {
               Devan Sugiharta
             </Link>
             <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-6 lg:space-x-8">
-              <Link href="/#hero" className="text-gray-300 hover:text-gray-100 transition-colors">Home</Link>
-              <Link href="/#about" className="text-gray-300 hover:text-gray-100 transition-colors">About</Link>
-              <Link href="/#skills" className="text-gray-300 hover:text-gray-100 transition-colors">Skills</Link>
-              <Link href="/#projects" className="text-gray-300 hover:text-gray-100 transition-colors">Projects</Link>
-              <Link href="/#contact" className="text-gray-300 hover:text-gray-100 transition-colors">Contact</Link>
+              <Link href="/#hero" className="text-gray-300 hover:text-white transition-colors">Home</Link>
+              <Link href="/#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
+              <Link href="/#skills" className="text-gray-300 hover:text-white transition-colors">Skills</Link>
+              <Link href="/#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+              <Link href="/#contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
             </div>
             <Link
               href="/#contact"
-              className="hidden md:inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+              className="hidden md:inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 border border-white/20 text-gray-200 bg-transparent hover:bg-white/10 hover:text-white"
             >
               <Mail className="w-4 h-4" />
               Contact Me
@@ -57,7 +57,7 @@ export function Header() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 w-9 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 w-9 border border-white/20 text-gray-200 bg-transparent hover:bg-white/10 hover:text-white"
               >
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle navigation menu</span>

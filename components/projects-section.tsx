@@ -43,7 +43,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 <div className="p-0 pt-4">
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                     {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-white/20 hover:bg-gray-800 hover:border-white/40">
+                      <span key={techIndex} className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-white/20 hover:bg-white/10 hover:border-white/40">
                         {tech}
                       </span>
                     ))}
@@ -54,7 +54,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-8 px-3 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
+                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-8 px-3 border border-white/20 text-gray-200 bg-transparent hover:bg-white/10 hover:text-white"
                       >
                         <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                         Code
@@ -65,7 +65,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-8 px-3 bg-gray-200 hover:bg-gray-300 text-black"
+                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-8 px-3 bg-gray-200 hover:bg-white/90 text-black"
                       >
                         <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                         Live Demo

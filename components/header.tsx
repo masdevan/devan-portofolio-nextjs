@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { Mail, Menu, X } from 'lucide-react'
+import { Mail, Menu } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { AnnouncementBar } from "@/components/announcement-bar"
 
@@ -56,7 +56,7 @@ export function Header() {
             </Link>
             <div className="md:hidden">
               <button
-                onClick={() => setIsMobileMenuOpen(true)}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 w-9 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"
               >
                 <Menu className="h-5 w-5" />
@@ -66,35 +66,17 @@ export function Header() {
           </nav>
         </div>
       </header>
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[60]">
-          <div className="fixed inset-0 bg-black/80" onClick={() => setIsMobileMenuOpen(false)} />
-          <div className="fixed inset-y-0 right-0 z-[60] w-3/4 bg-[#111111] border-l border-white/10 shadow-lg p-6">
-            <div className="flex flex-col gap-5 pt-8">
-              <Link href="/#hero" className="text-lg text-white hover:text-gray-100 transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('hero') }}>Home</Link>
-              <Link href="/#about" className="text-lg text-white hover:text-gray-100 transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('about') }}>About</Link>
-              <Link href="/#skills" className="text-lg text-white hover:text-gray-100 transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('skills') }}>Skills</Link>
-              <Link href="/#projects" className="text-lg text-white hover:text-gray-100 transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('projects') }}>Projects</Link>
-              <Link href="/#contact" className="text-lg text-white hover:text-gray-100 transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('contact') }}>Contact</Link>
-              <Link
-                href="/#contact"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 border border-white/20 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white mt-4"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Mail className="w-4 h-4" />
-                Contact Me
-              </Link>
-            </div>
-            <button
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="absolute right-4 top-4 rounded-sm opacity-70 hover:opacity-100 focus:outline-none text-white"
-            >
-              <X className="w-4 h-4" />
-              <span className="sr-only">Close</span>
-            </button>
+      <div className={'md:hidden overflow-hidden transition-all duration-300 ease-in-out ' + (isMobileMenuOpen ? 'max-h-80' : 'max-h-0')}>
+        <div className={'transition-transform duration-300 ease-in-out ' + (isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full')}>
+          <div className="bg-[#111111]/95 backdrop-blur-md border-b border-white/10 px-4 sm:px-8 py-4 flex flex-col gap-4">
+            <Link href="/#hero" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('hero') }}>Home</Link>
+            <Link href="/#about" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('about') }}>About</Link>
+            <Link href="/#skills" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('skills') }}>Skills</Link>
+            <Link href="/#projects" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('projects') }}>Projects</Link>
+            <Link href="/#contact" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('contact') }}>Contact</Link>
           </div>
         </div>
-      )}
+      </div>
     </div>
   )
 }

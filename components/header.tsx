@@ -43,7 +43,7 @@ export function Header() {
             <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-6 lg:space-x-8">
               <Link href="/#hero" className="text-gray-300 hover:text-white transition-colors">Home</Link>
               <Link href="/#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
-              <Link href="/#skills" className="text-gray-300 hover:text-white transition-colors">Skills</Link>
+
               <Link href="/#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
               <Link href="/#contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
             </div>
@@ -71,7 +71,7 @@ export function Header() {
           <div className="bg-[#111111]/95 backdrop-blur-md border-b border-white/10 px-4 sm:px-8 py-4 flex flex-col gap-4">
             <Link href="/#hero" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('hero') }}>Home</Link>
             <Link href="/#about" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('about') }}>About</Link>
-            <Link href="/#skills" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('skills') }}>Skills</Link>
+
             <Link href="/#projects" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('projects') }}>Projects</Link>
             <Link href="/#contact" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('contact') }}>Contact</Link>
           </div>

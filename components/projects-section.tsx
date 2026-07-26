@@ -43,7 +43,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 <div className="p-0 pt-4">
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                     {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-white/20 hover:bg-gray-800 hover:border-white/40">
+                      <span key={techIndex} className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors bg-[#1a1a1a] text-gray-200 border border-white/20 hover:bg-gray-800 hover:border-white/40">
                         {tech}
                       </span>
                     ))}

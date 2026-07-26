@@ -18,9 +18,18 @@ const config = {
         md: "0px",
         lg: "0px",
       },
+      animation: {
+        shiny: "shiny 8s ease-in-out infinite",
+      },
+      keyframes: {
+        shiny: {
+          "0%": { backgroundPosition: "200% center" },
+          "100%": { backgroundPosition: "-200% center" },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 } satisfies Config
 
 export default config

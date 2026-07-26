@@ -20,7 +20,7 @@ export function JourneySection() {
                                 <div className="bg-[#161616] border border-white/10 rounded-lg">
                                     <div className="p-5 md:p-6">
                                         <div className="flex flex-wrap items-center gap-2 mb-2">
-                                            <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-[#1a1a1a] text-gray-200 border border-white/20">
+                                            <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-[#1a1a1a] text-gray-200 border border-white/20">
                                                 {item.period}
                                             </span>
                                             {Array.isArray(item.company) ? (

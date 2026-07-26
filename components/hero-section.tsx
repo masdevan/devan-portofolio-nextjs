@@ -7,7 +7,7 @@ import Link from "next/link"
 export function HeroSection() {
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 md:pt-24 bg-[#111111]">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-[99px] md:pt-[131px] bg-[#111111]">
       <div
         className="absolute inset-0 z-0 opacity-10"
         style={{

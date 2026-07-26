@@ -12,7 +12,7 @@ export default function TermsOfServicePage() {
   return (
     <div className="min-h-screen bg-[#111111] text-white flex flex-col">
       <Header />
-      <main className="flex-grow container mx-auto px-8 py-24 max-w-[1200px]">
+      <main className="flex-grow container mx-auto px-8 pt-[131px] pb-24 max-w-[1200px]">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">
           <span className="text-white">
             Terms of Service

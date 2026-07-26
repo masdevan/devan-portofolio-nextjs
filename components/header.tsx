@@ -2,10 +2,13 @@
 
 import Link from "next/link"
 import { Mail, Menu, X } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { AnnouncementBar } from "@/components/announcement-bar"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [barVisible, setBarVisible] = useState(true)
+  const prevScroll = useRef(0)
 
   useEffect(() => {
     const scrollToElement = (id: string) => {
@@ -18,15 +21,26 @@ export function Header() {
     ;(window as any).scrollToElement = scrollToElement
   }, [])
 
+  useEffect(() => {
+    const onScroll = () => {
+      const cur = window.scrollY
+      setBarVisible(cur <= prevScroll.current || cur <= 50)
+      prevScroll.current = cur
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
-    <>
-      <header className="fixed top-0 w-full bg-[#111111]/90 backdrop-blur-md border-b border-white/10 z-50">
+    <div className="fixed top-0 left-0 right-0 z-50 flex flex-col">
+      <AnnouncementBar visible={barVisible} />
+      <header className="bg-[#111111]/90 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 sm:px-8 py-3 md:py-4 max-w-[1300px]">
-          <nav className="flex items-center justify-between">
+          <nav className="flex items-center justify-between relative">
             <Link href="/" className="text-xl sm:text-2xl font-bold text-white">
               Devan Sugiharta
             </Link>
-            <div className="hidden md:flex space-x-6 lg:space-x-8">
+            <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-6 lg:space-x-8">
               <Link href="/#hero" className="text-gray-300 hover:text-gray-100 transition-colors">Home</Link>
               <Link href="/#about" className="text-gray-300 hover:text-gray-100 transition-colors">About</Link>
               <Link href="/#skills" className="text-gray-300 hover:text-gray-100 transition-colors">Skills</Link>
@@ -75,12 +89,12 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="absolute right-4 top-4 rounded-sm opacity-70 hover:opacity-100 focus:outline-none text-white"
             >
-              <X className="h-4 w-4" />
+              <X className="w-4 h-4" />
               <span className="sr-only">Close</span>
             </button>
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }

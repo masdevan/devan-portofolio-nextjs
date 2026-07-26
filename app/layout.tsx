@@ -5,6 +5,7 @@ import { FloatingWhatsApp } from '@/components/floating-whatsapp'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://devansugiharta.my.id'),
   title: 'Devan Yudistira Sugiharta | Personal Website Portofolio',
   description: 'Devan Yudistira Sugiharta Portofolio - Introduction Personal Website.',
   keywords: ['Portofolio', 'Personal Portofolio', 'Devan Yudistira Sugiharta', 'Web Developer', 'Software Engineer'],

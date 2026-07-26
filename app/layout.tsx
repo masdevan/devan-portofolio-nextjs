@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { FloatingWhatsApp } from '@/components/floating-whatsapp'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -49,6 +50,7 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning={true}>
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   )

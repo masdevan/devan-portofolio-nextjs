@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { Github, Linkedin, Mail, Globe, Phone, MapPin, Instagram, MessageCircle } from 'lucide-react'
+import { Github, Linkedin, Mail, Globe, Phone, MapPin, Instagram, MessageCircle, AtSign, BadgeInfo } from 'lucide-react'
 
 export function Footer() {
 
@@ -65,9 +65,17 @@ export function Footer() {
                     <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
                     Website
                   </a>
-                  <a href="https://www.linkedin.com/in/masdevansugiharta" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
+                  <a href="https://www.threads.net/@masdevannns" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
+                    <AtSign className="w-4 h-4 sm:w-5 sm:h-5" />
+                    Threads
+                  </a>
+                  <a href="https://www.linkedin.com/in/devan-yudistira-a265a638b/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
                     <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     LinkedIn
+                  </a>
+                  <a href="https://orcid.org/0009-0003-5057-1725" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs sm:text-sm font-medium transition-colors h-9 px-4 py-2 border border-white/20 text-white/80 bg-transparent hover:bg-white/10 hover:text-white">
+                    <BadgeInfo className="w-4 h-4 sm:w-5 sm:h-5" />
+                    ORCID
                   </a>
                 </div>
               </div>

@@ -6,7 +6,7 @@ export const journeyData: JourneyItem[] = [
     company: "Freelancer",
     role: "Frontend Developer",
     description:
-      "It was a phase where I was new to coding and started with HTML, CSS, and BOOTSTRAP, with the help of W3 School as my learning media, And the first time I got a job, it was called AVA CLEAN, a website for selling cleaning products for motorbikes.",
+      "This marked my introduction to coding, where I began with HTML, CSS, and Bootstrap, using W3Schools as my primary learning resource. My first professional project was AVA CLEAN, an e-commerce website for motorcycle cleaning products.",
   },
   {
     period: "January 2024 - August 2024",

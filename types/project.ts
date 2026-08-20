@@ -1,8 +1,7 @@
 export interface Project {
   title: string
-  description: string
-  tech: string[]
-  image: string
+  images: string[]
+  logo?: string
   github?: string
   demo?: string
 }

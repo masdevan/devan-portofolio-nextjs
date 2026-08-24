@@ -15,4 +15,18 @@ export const projects: Project[] = [
       "/duhlupa/assets/prototype_6.png",
     ],
   },
+  {
+    title: "Gymbase",
+    logo: "/gymbase/logo.png",
+    github: "https://github.com/masdevan/gymbase",
+    demo: "https://gymbase.devansugiharta.my.id/",
+    images: [
+      "/gymbase/assets/image_1.png",
+      "/gymbase/assets/image_2.png",
+      "/gymbase/assets/image_3.png",
+      "/gymbase/assets/image_4.png",
+      "/gymbase/assets/image_5.png",
+      "/gymbase/assets/image_6.png",
+    ],
+  },
 ]

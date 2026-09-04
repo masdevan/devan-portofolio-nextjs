@@ -29,4 +29,18 @@ export const projects: Project[] = [
       "/gymbase/assets/image_6.png",
     ],
   },
+  {
+    title: "BerRuang",
+    logo: "/berruang/logo.png",
+    github: "https://github.com/masdevan/berruang-fullstack.git",
+    demo: "https://berruang.devan.my.id/",
+    images: [
+      "/berruang/assets/image_1.png",
+      "/berruang/assets/image_2.png",
+      "/berruang/assets/image_3.png",
+      "/berruang/assets/image_4.png",
+      "/berruang/assets/image_5.png",
+      "/berruang/assets/image_6.png",
+    ],
+  },
 ]

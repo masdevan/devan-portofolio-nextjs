@@ -43,4 +43,18 @@ export const projects: Project[] = [
       "/berruang/assets/image_6.png",
     ],
   },
+  {
+    title: "Market Pool",
+    logo: "/marketpool/logo.png",
+    github: "https://github.com/masdevan/nucestatic_forex_pool.git",
+    demo: "https://marketpool.devan.my.id/",
+    images: [
+      "/marketpool/assets/image_1.png",
+      "/marketpool/assets/image_2.png",
+      "/marketpool/assets/image_3.png",
+      "/marketpool/assets/image_4.png",
+      "/marketpool/assets/image_5.png",
+      "/marketpool/assets/image_6.png",
+    ],
+  },
 ]

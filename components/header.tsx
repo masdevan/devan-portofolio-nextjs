@@ -1,14 +1,28 @@
 'use client'
 
 import Link from "next/link"
-import { Mail, Menu } from 'lucide-react'
+import { ChevronDown, Mail, Menu } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { AnnouncementBar } from "@/components/announcement-bar"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isProjectsMenuOpen, setIsProjectsMenuOpen] = useState(false)
   const [barVisible, setBarVisible] = useState(true)
   const prevScroll = useRef(0)
+  const projectsMenuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!isProjectsMenuOpen) return
+
+    const onPointerDown = (event: MouseEvent) => {
+      if (!projectsMenuRef.current?.contains(event.target as Node)) {
+        setIsProjectsMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', onPointerDown)
+    return () => document.removeEventListener('mousedown', onPointerDown)
+  }, [isProjectsMenuOpen])
 
   useEffect(() => {
     const scrollToElement = (id: string) => {
@@ -44,7 +58,41 @@ export function Header() {
               <Link href="/#hero" className="text-gray-300 hover:text-white transition-colors">Home</Link>
               <Link href="/#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
 
-              <Link href="/#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+              <div ref={projectsMenuRef} className="relative">
+                <button
+                  type="button"
+                  onClick={() => setIsProjectsMenuOpen((isOpen) => !isOpen)}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Escape') setIsProjectsMenuOpen(false)
+                  }}
+                  aria-expanded={isProjectsMenuOpen}
+                  aria-haspopup="true"
+                  className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
+                >
+                  Projects
+                  <ChevronDown
+                    className={`h-3.5 w-3.5 transition-transform ${isProjectsMenuOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+                {isProjectsMenuOpen && (
+                  <div className="absolute left-1/2 top-full z-50 mt-2 w-44 -translate-x-1/2 overflow-hidden rounded-md border border-white/10 bg-[#161616] shadow-xl shadow-black/40">
+                    <Link
+                      href="/#projects"
+                      onClick={() => setIsProjectsMenuOpen(false)}
+                      className="block px-4 py-2.5 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white"
+                    >
+                      All Projects
+                    </Link>
+                    <Link
+                      href="/project/nucestatic"
+                      onClick={() => setIsProjectsMenuOpen(false)}
+                      className="block border-t border-white/10 px-4 py-2.5 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white"
+                    >
+                      Nucestatic
+                    </Link>
+                  </div>
+                )}
+              </div>
               <Link href="/#contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
             </div>
             <Link
@@ -73,6 +121,7 @@ export function Header() {
             <Link href="/#about" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('about') }}>About</Link>
 
             <Link href="/#projects" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('projects') }}>Projects</Link>
+            <Link href="/project/nucestatic" className="text-base text-white/70 hover:text-white transition-colors pl-4" onClick={() => setIsMobileMenuOpen(false)}>Nucestatic</Link>
             <Link href="/#contact" className="text-base text-white/70 hover:text-white transition-colors" onClick={() => { setIsMobileMenuOpen(false); (window as any).scrollToElement?.('contact') }}>Contact</Link>
           </div>
         </div>

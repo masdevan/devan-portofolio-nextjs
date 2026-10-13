@@ -8,6 +8,9 @@
 ├── app/
 │   ├── privacy-policy/
 │   │   └── page.tsx
+│   ├── project/
+│   │   └── nucestatic/
+│   │       └── page.tsx
 │   ├── terms-of-service/
 │   │   └── page.tsx
 │   ├── globals.css
@@ -35,8 +38,37 @@
 │   │   ├── site.webmanifest
 │   │   ├── web-app-manifest-192x192.png
 │   │   └── web-app-manifest-512x512.png
+│   ├── berruang/
+│   │   ├── assets/
+│   │   │   ├── image_1.png
+│   │   │   ├── image_2.png
+│   │   │   ├── image_3.png
+│   │   │   ├── image_4.png
+│   │   │   ├── image_5.png
+│   │   │   └── image_6.png
+│   │   └── logo.png
+│   ├── brands/
+│   │   └── nucestatic_logo.png
 │   ├── blank-web.webp
 │   ├── dy-pattern.webp
+│   ├── duhlupa/
+│   │   ├── assets/
+│   │   │   ├── prototype_1.png
+│   │   │   ├── prototype_2.png
+│   │   │   ├── prototype_3.png
+│   │   │   ├── prototype_4.png
+│   │   │   ├── prototype_5.png
+│   │   │   └── prototype_6.png
+│   │   └── logo.png
+│   ├── gymbase/
+│   │   ├── assets/
+│   │   │   ├── image_1.png
+│   │   │   ├── image_2.png
+│   │   │   ├── image_3.png
+│   │   │   ├── image_4.png
+│   │   │   ├── image_5.png
+│   │   │   └── image_6.png
+│   │   └── logo.png
 │   ├── horizontal-image.webp
 │   ├── placeholder.svg
 │   ├── professional-developer-portrait.webp
@@ -54,6 +86,7 @@
 ├── postcss.config.mjs
 ├── README.md
 ├── rules.md
+├── structure.md
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── tsconfig.tsbuildinfo

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Mail, Globe, Phone, MapPin, Instagram, MessageCircle, AtSign, BadgeInfo } from 'lucide-react'
 
@@ -80,6 +81,22 @@ export function Footer() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 sm:px-8 max-w-[1300px] relative z-10 mt-12 md:mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-4xl mx-auto">
+            <Link
+              href="/project/nucestatic"
+              className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <Image
+                src="/brands/nucestatic_logo.png"
+                alt="Nucestatic"
+                width={504}
+                height={112}
+                className="w-full h-auto"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex justify-center pointer-events-none mt-20">
